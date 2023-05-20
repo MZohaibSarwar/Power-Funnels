@@ -1,0 +1,36 @@
+.reviewhome{
+    background-color: #eeeeee;
+    padding: 70px 0;
+    
+    .container{
+
+        .upwork-img{
+            width: 135px;
+        }
+        .top-rated-img{
+            width: 38px;
+        }
+        .top-rated-title{
+            font-size: 32px;
+            font-weight: bold;
+            padding: 0 10px ;
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .reviewhome{
+        
+        .container{
+    
+            .upwork-img{
+                width: 120px;
+            }
+            .top-rated-img{
+                width: 28px;
+            }
+            .top-rated-title{
+                font-size: 28px;
+            }
+        }
+    }
+}

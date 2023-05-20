@@ -1,0 +1,39 @@
+.aboutprofile{
+    padding: 70px 0;
+}
+.col-sm-4{
+    padding: 12px;
+}
+.card{
+    padding: 25px 20px;
+}
+h5.card-title{
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+h4.card-text{
+    font-size: 12px;
+    font-weight: bold;
+}
+.aboutprofile-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.aboutprofile-desc{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 50px 30px;
+}
+@media only screen and (max-width: 768px) {
+  .aboutprofile{
+    padding: 50px 0;
+  }
+  .aboutprofile-desc{
+    margin: 20px 0 30px;
+  }
+br{
+    display: none;
+}
+}

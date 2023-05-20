@@ -1,0 +1,20 @@
+.card{
+    padding: 10px 5px;
+
+    .review-item-header{
+        padding: 0 0 24px;
+        align-items: center;
+    }
+    .review-item-title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .review-item-img{
+        width: 75px;
+        border: 1px solid #afafaf;
+        border-radius: 50px;
+    }
+    .review-item-info{
+        padding: 10px 0 0 10px ;
+    }
+}

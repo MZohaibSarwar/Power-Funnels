@@ -1,0 +1,40 @@
+.service-page{
+    .davedemare{
+      
+        .davedemare-row{
+       
+    
+        .davedemare-image{
+            width: 720px;
+        }
+    
+        }
+    }
+    }
+    @media only screen and (max-width: 900px) {
+  .service-page{
+        .davedemare{
+          
+            .davedemare-row{
+            
+            .davedemare-image{
+                width: 380px;
+            }
+            }
+        }  
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .power-process{
+         .col-md-4{
+            width: 50%;
+         }
+     }
+ }
+ @media only screen and (max-width: 600px) {
+    .power-process{
+         .col-md-4{
+            width: 100%;
+         }
+     }
+ }

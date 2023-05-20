@@ -1,0 +1,83 @@
+.nav-section{
+    h6{
+        color: red;
+    }
+.section-212904{
+    padding: 50px 20px;
+    width: 800px;
+    h2{
+        font-size: 32px;
+        font-weight: bold;
+        padding:  0 0 15px;
+    }
+}
+.price-card{
+    h6{
+        color: black;
+    }
+    h2{
+        color: red;
+        font-size: 30px;
+        font-weight: bold;
+        span{
+            font-size: 16px;
+        }
+    }
+    .card-body{
+        padding: 20px 0 0 10px;
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+}
+}
+@media only screen and (max-width: 900px) {
+   .nav-section{
+    .section-212904{
+        width: 100%;
+    }
+}
+}
+@media only screen and (max-width: 1280px) {
+    #section-212904{
+         .col-md-3{
+            width: 33.33%;
+         }
+     }
+ }
+@media only screen and (max-width: 1000px) {
+    #section-212904{
+         .col-md-3{
+            width: 50%;
+         }
+     }
+ }
+ @media only screen and (max-width: 768px) {
+    #section-212904{
+         .col-md-3{
+            width: 100%;
+         }
+     }
+ }
+ @media only screen and (max-width: 1280px) {
+    #section-212905{
+         .col-md-3{
+            width: 33.33%;
+         }
+     }
+ }
+@media only screen and (max-width: 1000px) {
+    #section-212905{
+         .col-md-3{
+            width: 50%;
+         }
+     }
+ }
+ @media only screen and (max-width: 768px) {
+    #section-212905{
+         .col-md-3{
+            width: 100%;
+         }
+     }
+ }

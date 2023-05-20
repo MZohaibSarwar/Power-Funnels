@@ -1,0 +1,13 @@
+.faq-section{
+    padding: 70px 0;
+    .faq-heading{
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .faq-section{
+        padding: 50px 0 0;
+}
+}

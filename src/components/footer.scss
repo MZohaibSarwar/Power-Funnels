@@ -1,0 +1,29 @@
+.container{
+    
+.linkitem {
+    text-decoration: none;
+    color: white;
+}
+
+.linktitle {
+   font-size: 18px;
+   font-weight: bold;
+}
+}
+@media only screen and (max-width: 1000px) {
+    .footer-section{
+        .col-md-3{
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width: 766px) {
+    .footer-section{
+        .col-md-3{
+            width: 100%;
+        }
+        .justify-content-end{
+            justify-content: flex-start !important;
+        }
+    }
+}

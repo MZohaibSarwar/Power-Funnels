@@ -1,0 +1,97 @@
+  
+  /*animated logo tree section*/
+  .pf-anim-tree-main-row{
+    width: 165%;
+    height:auto;
+  }
+  @keyframes blink {
+    0% {
+        filter: drop-shadow(0px 0px 10px #fd1716);
+   }
+    50% {
+        filter: none;
+   }
+    100% {
+        filter: drop-shadow(0px 0px 10px #fd1716);
+   }
+  }
+  @-webkit-keyframes blink {
+    0% {
+        filter: drop-shadow(0px 0px 10px #fd1716);
+   }
+    50% {
+        filter: drop-shadow(0 0 0);
+   }
+    100% {
+        filter: drop-shadow(0px 0px 10px #fd1716);
+   }
+  }
+  .pf-animated-tree-logo{
+    float:right;
+    height:360px;
+    width:369px;
+    margin-right: -50px;
+    -webkit-animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    -ms-animation: blink 1.5s linear infinite;
+    -o-animation: blink 1.5s linear infinite;
+    animation: blink 1.5s linear infinite;
+  }
+  .pf-anim-tree-sub-heading-before{
+    margin-bottom: -4px;
+    color: white;
+    font-size: 12px;
+  }
+  .pf-anim-tree-sub-heading-after{
+    margin-top: -3px;
+    color: white;
+    font-size: 12px;
+  }
+  .pf-anim-tree-leaf{
+    height: 158px;
+    place-items: center;
+  }
+  .pf-anim-tree-img-parent{
+    text-align: end;
+    place-self: center;
+  }
+  .animated-leaf-icon-1{
+    padding:12px;
+    width: 60px;
+    height: 60px;
+    background-color: #6ADFD7;
+    border-radius: 33%;
+  }
+  .animated-leaf-icon-2{
+    padding:12px;
+    width: 60px;
+    height: 60px;
+    background-color: #41D58C;
+    border-radius: 33%;
+  }
+  .animated-leaf-icon-3{
+    padding:12px;
+    width: 60px;
+    height: 60px;
+    background-color: #EDBC0C;
+    border-radius: 33%;
+  }
+
+
+  
+  .animated-image{
+    margin-left: -220px !important;
+  }
+  .branding-col{
+    margin-left: -50px;
+  }
+  #animated-icon{
+    .left-text{
+      padding-right: 150px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+#animated-icon{
+    display: none;
+}
+  }

@@ -1,0 +1,68 @@
+.banner {
+    padding: 100px 0;
+    background-color: rgba(0,0,0,0.5);;
+}
+.heading-colom{
+    margin-top: 60px;
+}
+.banner-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.form-colom {
+padding: 0 60px;
+margin: -20px 0;
+}
+.form {
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: #4e4e4e7d;
+}
+.form-control {
+    background-color: transparent;
+    padding: 15px;
+    outline: none;
+    color: white;
+}
+.form-control::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+input[type=text]:focus {
+    background-color: transparent;
+    color: white;
+}
+input[type=email]:focus {
+    background-color: transparent;
+    color: white;
+}
+input[type=url]:focus {
+    background-color: transparent;
+    color: white;
+}
+input[type=contact]:focus {
+    background-color: transparent;
+    color: white;
+}
+.form-btn{
+    width: 100%;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner{
+      padding: 70px 0 50px;
+    }
+    .heading-colom{
+      margin: 0;
+      text-align: center;
+    }
+    .form-colom{
+        margin: 20px 0 0;
+        padding: 0 20px;
+    }
+    .banner-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+  }

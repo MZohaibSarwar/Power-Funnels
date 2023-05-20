@@ -1,0 +1,17 @@
+.carasoul{
+    padding: 70px 0;
+    .carasoul-title{
+        font-size: 32px;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .carasoul-img{
+        height: 520px;
+    }
+  
+}
+@media only screen and (max-width: 1200px) {
+.carasoul{
+    display: none;
+}
+  }

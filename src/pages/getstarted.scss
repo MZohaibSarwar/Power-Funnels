@@ -1,0 +1,19 @@
+.calendly-inline-widget {
+  height: 660px !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .calendly-inline-widget {
+    height: 1230px !important;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .typeform-mobile {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .typeform-desktop {
+    display: none !important;
+  }
+}

@@ -1,0 +1,37 @@
+.davedemare{
+    background-color: #000000;
+    .davedemare-row{
+     align-items: center;
+
+    .davedemare-image{
+        width: 670px;
+    }
+    .davedemare-col-2{
+        max-width: 500px;
+        .davedemare-title{
+            font-size: 32px;
+            font-weight: bold;
+            padding: 0 0 10px;
+        }
+        .davedemare-name{
+            font-weight: bold;
+        }
+    }
+
+    }
+}
+@media only screen and (max-width: 900px) {
+    .davedemare{
+      
+        .davedemare-row{
+        
+        .davedemare-image{
+            width: 380px;
+        }
+        .davedemare-col-2{
+            padding: 30px;
+        }
+    
+        }
+    }  
+}

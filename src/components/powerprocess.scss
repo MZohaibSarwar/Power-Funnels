@@ -1,0 +1,27 @@
+.power-process{
+    padding: 70px 0;
+    .container{
+        .heading{
+            margin: 0 0 16px;
+            h2{
+                font-size: 32px;
+                font-weight: bold;
+                padding: 0 0 10px;
+            }
+        }
+        .power-process-col {
+            padding: 12px;
+        }
+        .card{
+            padding: 30px 20px;
+            .power-process-img{
+                width: 75px;
+            }
+            .card-title{
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
