@@ -1,0 +1,45 @@
+.blog-post{
+    padding: 70px 0;
+}
+.post-items{
+    padding: 0;
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .badge-1{
+        margin-top: -22px;
+    }
+    .post-image{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .blog-post{
+        .col-md-4{
+            width: 50%;
+        }
+    }
+    .post-items{
+        .post-image{
+            height: 260px;
+        }
+    }
+ }
+ @media only screen and (max-width: 600px) {
+    .blog-post{
+        padding: 50px 15px;
+        .col-md-4{
+            width: 100%;
+        }
+    }
+    .post-items{
+        .post-image{
+            height: 260px;
+        }
+    }
+ }
