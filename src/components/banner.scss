@@ -49,7 +49,21 @@ input[type=contact]:focus {
     padding: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+    .banner{
+      padding: 70px 0 50px;
+    }
+
+    .form-colom{
+        margin: 20px 0 0;
+        padding: 0 20px;
+    }
+    .banner-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+  }
+  @media only screen and (max-width: 600px) {
     .banner{
       padding: 70px 0 50px;
     }

@@ -189,10 +189,10 @@ function Salesfunnels() {
         title={<> Are You Ready To Explode Your Revenue?</>}
         desc={
           <>
-            <Link to="/get-started" className="btn btn-danger btn-lg me-3">
+            <Link to="/get-started" className="btn btn-danger btn-lg mx-2 my-2">
               Get Started <i className="fa-solid fa-arrow-right ps-2"></i>
             </Link>
-            <Link to="/reviews" className="btn btn-outline-dark btn-lg">
+            <Link to="/reviews" className="btn btn-outline-dark btn-lg mx-2 my-2">
               Our Reviews <i className="fa-solid fa-arrow-right ps-2"></i>
             </Link>
           </>

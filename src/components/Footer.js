@@ -12,14 +12,14 @@ function Footer() {
             <Link className="" to="/"><img style={{ width: "240px" }} src='/images/white-logo-Custom-300x56.webp' alt='image1' /> </Link>
             <p className='mt-3' >Power Funnels is a battle tested and proven digital marketing agency that powers your success no matter how competitive your industry or vertical is - one strategy, and award at a time.</p>
             <p className='linktitle mt-5'>Contact</p>
-            <p><a className='linkitem' href="mailto:Hello@power-funnels.com"><i className="fa-solid fa-envelope"></i> Hello@power-funnels.com</a></p>
+            <p><Link className='linkitem' to="mailto:Hello@power-funnels.com"><i className="fa-solid fa-envelope"></i> Hello@power-funnels.com</Link></p>
           </div>
 
           <div className="col-md-3">
             <p className='linktitle'>Company</p>
             <p><Link className='linkitem' to="/">Home</Link></p>
             <p><Link className='linkitem' to="/about-us">About</Link></p>
-            <p><Link className='linkitem' to="https://results.power-funnels.com/">Results</Link></p>
+            <p><Link className='linkitem' to="https://results.power-funnels.com/" target="_blank">Results</Link></p>
             <p><Link className='linkitem' to="/get-started">Get Started</Link></p>
             <p><Link className='linkitem' to="/reviews">Reviews</Link></p>
             <p><Link className='linkitem' to="/join">Join Our Team</Link></p>
@@ -34,7 +34,7 @@ function Footer() {
             <p><Link className='linkitem' to="/seo-for-lawyers">SEO for Lawyers</Link></p>
             <p><Link className='linkitem' to="/healthcare-seo">HealthCare SEO</Link></p>
             <p><Link className='linkitem' to="/dispensary-marketing">Dispensary Marketing</Link></p>
-            <p><Link className='linkitem' to="https://mortgagebrokers.power-funnels.com/">Mortgage Brokers</Link></p>
+            <p><Link className='linkitem' to="https://mortgagebrokers.power-funnels.com/" target="_blank">Mortgage Brokers</Link></p>
           </div>
 
           <div className="col-md-3">
