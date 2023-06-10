@@ -28,12 +28,14 @@ import HealthWeb from "./pages/HealthWeb";
 import MarijuanaMarketing from "./pages/MarijuanaMarketing";
 import Terms from "./pages/Terms";
 import WebsiteMaintainence from "./pages/WebsiteMaintainence";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="">
            <BrowserRouter>
            <Navbar/>
+           <ScrollToTop/>
       <Routes>
         <Route path="/">
           <Route index element = {<Home/>}/>

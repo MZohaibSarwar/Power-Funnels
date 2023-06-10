@@ -1,12 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './navbar.scss'
 
 function Navbar() {
+
   let location = useLocation();
   useEffect(()=>{
   },[location]);
 
+  const refClose = useRef(null);
+  const ref = useRef(null);
+     const clickRefClose = () => {
+      refClose.current.click();
+    };
+    const clickRef = () => {
+      ref.current.click();
+    };
   return (
     <>
       <section className='topbar bg-dark text-light' >
@@ -31,29 +40,29 @@ function Navbar() {
                   <Link className={`nav-link ${location.pathname ==="/"? "active" : " "}`} aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item ms-4 dropdown">
-                  <Link className={`nav-link dropdown-toggle ${location.pathname ==="/about-us"? "active" : " "}`} to="/about-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <Link ref={refClose} className={`nav-link dropdown-toggle ${location.pathname ==="/about-us"? "active" : " "}`} to="/about-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About
                   </Link>
                   <ul className="dropdown-menu">
-                    <li><Link className={`dropdown-item ${location.pathname ==="/about-us"? "active" : " "}`} to="/about-us">About Us</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/join"? "active" : " "}`} to="/join">Join Our Team</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/refer"? "active" : " "}`} to="/refer">Referral Program</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/faq"? "active" : " "}`} to="/faq">FAQs</Link></li>
+                    <li><Link onClick={clickRefClose} className={`dropdown-item ${location.pathname ==="/about-us"? "active" : " "}`} to="/about-us">About Us</Link></li>
+                    <li><Link onClick={clickRefClose} className={`dropdown-item ${location.pathname ==="/join"? "active" : " "}`} to="/join">Join Our Team</Link></li>
+                    <li><Link onClick={clickRefClose} className={`dropdown-item ${location.pathname ==="/refer"? "active" : " "}`} to="/refer">Referral Program</Link></li>
+                    <li><Link onClick={clickRefClose} className={`dropdown-item ${location.pathname ==="/faq"? "active" : " "}`} to="/faq">FAQs</Link></li>
                   </ul>
                 </li>
                 <li className="nav-item ms-4 dropdown">
-                  <Link className={`nav-link dropdown-toggle ${location.pathname ==="/services"? "active" : " "}`} to="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <Link ref={ref} className={`nav-link dropdown-toggle ${location.pathname ==="/services"? "active" : " "}`} to="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                   </Link>
                   <ul className="dropdown-menu">
-                  <li><Link className={`dropdown-item ${location.pathname ==="/services"? "active" : " "}`} to="/services">Services</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/sales-funnels"? "active" : " "}`} to="/sales-funnels">Sales Funnels</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/seo"? "active" : " "}`} to="/seo">SEO</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/social-media-marketing"? "active" : " "}`} to="/social-media-marketing">Social Media Marketing</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/web-development"? "active" : " "}`} to="/web-development">Web Development</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/ppc-advertising"? "active" : " "}`} to="/ppc-advertising">PPC Advertising</Link></li>
-                    <li><Link className={`dropdown-item ${location.pathname ==="/cannabis-marketing"? "active" : " "}`} to="/cannabis-marketing">Cannabis Marketing</Link></li>
-                    <li><Link target="_blank" className={`dropdown-item ${location.pathname ==="/https://mortgagebrokers.power-funnels.com/"? "active" : " "}`} to="https://mortgagebrokers.power-funnels.com/">Mortgage Brokers</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/services"? "active" : " "}`} to="/services">Services</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/sales-funnels"? "active" : " "}`} to="/sales-funnels">Sales Funnels</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/seo"? "active" : " "}`} to="/seo">SEO</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/social-media-marketing"? "active" : " "}`} to="/social-media-marketing">Social Media Marketing</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/web-development"? "active" : " "}`} to="/web-development">Web Development</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/ppc-advertising"? "active" : " "}`} to="/ppc-advertising">PPC Advertising</Link></li>
+                    <li><Link onClick={clickRef} className={`dropdown-item ${location.pathname ==="/cannabis-marketing"? "active" : " "}`} to="/cannabis-marketing">Cannabis Marketing</Link></li>
+                    <li><Link onClick={clickRef} target="_blank" className={`dropdown-item ${location.pathname ==="/https://mortgagebrokers.power-funnels.com/"? "active" : " "}`} to="https://mortgagebrokers.power-funnels.com/">Mortgage Brokers</Link></li>
                   </ul>
                 </li>
                 <li className="nav-item ms-4 dropdown">
