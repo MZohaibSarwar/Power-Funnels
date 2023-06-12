@@ -12,32 +12,41 @@ function Navbar() {
   const ref = useRef(null);
      const clickRefClose = () => {
       refClose.current.click();
+      closeMobileNav();
     };
     const clickRef = () => {
       ref.current.click();
+      closeMobileNav();
     };
+
+    function closeMobileNav() {
+      if(window.innerWidth <= 993){
+      document.querySelector("#ToggleNavigation").click();
+    }
+    }
+
   return (
     <>
       <section className='topbar bg-dark text-light' >
         <div className="container d-flex">
           <div className="me-auto p-2"><i className="fa-solid fa-power-off me-1"></i> Building & Scaling Online Businesses Globally Since 2013</div>
-          <div className="p-2"><Link className='linkitem' to='https://power-funnels.agencyanalytics.app/' target="_blank"><i className="fa-solid fa-right-to-bracket me-1"></i> CLIENT LOGIN</Link></div>
+          {/* <div className="p-2"><Link className='linkitem' to='https://power-funnels.agencyanalytics.app/' target="_blank"><i className="fa-solid fa-right-to-bracket me-1"></i> CLIENT LOGIN</Link></div> */}
           <div className="p-2"><Link className='linkitem' to="get-started"><i className="fa-solid fa-phone me-1"></i> SCHEDULE A CALL</Link></div>
         </div>
       </section>
 <section className='header-fixed'>
       <div className='container header-container'>
         <nav className="navbar navbar-expand-lg">
-          <div className="container-fluid">
+          <div className="container-fluid p-0">
             <Link className="navbar-brand" to="/"><img style={{ width: "215px" }} src='/images/pf-logo.svg' alt='image1' /> </Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="ToggleNavigation" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse ms-5" id="navbarSupportedContent">
 
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li className="nav-item ms-4">
-                  <Link className={`nav-link ${location.pathname ==="/"? "active" : " "}`} aria-current="page" to="/">Home</Link>
+                  <Link onClick={closeMobileNav} className={`nav-link ${location.pathname ==="/"? "active" : " "}`} aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item ms-4 dropdown">
                   <Link ref={refClose} className={`nav-link dropdown-toggle ${location.pathname ==="/about-us"? "active" : " "}`} to="/about-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,23 +79,23 @@ function Navbar() {
                     Results
                   </Link>
                   <ul className="dropdown-menu">
-                    <li><Link target="_blank" className="dropdown-item" to="https://results.power-funnels.com/">Home</Link></li>
-                    <li><Link target="_blank" className="dropdown-item" to="https://results.power-funnels.com/website-builds/">Website Builds</Link></li>
-                    <li><Link target="_blank" className="dropdown-item" to="https://results.power-funnels.com/website-rebuilds/">Website Redesign</Link></li>
-                    <li><Link target="_blank" className="dropdown-item" to="https://results.power-funnels.com/landing-pages/">Landing Pages</Link></li>
-                    <li><Link target="_blank" className="dropdown-item" to="https://results.power-funnels.com/case-studies/">Case Studies</Link></li>
+                    <li><Link onClick={closeMobileNav} target="_blank" className="dropdown-item" to="https://results.power-funnels.com/">Home</Link></li>
+                    <li><Link onClick={closeMobileNav} target="_blank" className="dropdown-item" to="https://results.power-funnels.com/website-builds/">Website Builds</Link></li>
+                    <li><Link onClick={closeMobileNav} target="_blank" className="dropdown-item" to="https://results.power-funnels.com/website-rebuilds/">Website Redesign</Link></li>
+                    <li><Link onClick={closeMobileNav} target="_blank" className="dropdown-item" to="https://results.power-funnels.com/landing-pages/">Landing Pages</Link></li>
+                    <li><Link onClick={closeMobileNav} target="_blank" className="dropdown-item" to="https://results.power-funnels.com/case-studies/">Case Studies</Link></li>
                   </ul>
                 </li>
                 <li className="nav-item ms-4">
-                  <Link className={`nav-link ${location.pathname ==="/blog"? "active" : " "}`} to="/blog">Blog</Link>
+                  <Link onClick={closeMobileNav} className={`nav-link ${location.pathname ==="/blog"? "active" : " "}`} to="/blog">Blog</Link>
                 </li>
                 <li className="nav-item ms-4">
-                  <Link className={`nav-link ${location.pathname ==="/reviews"? "active" : " "}`} to="/reviews">Reviews</Link>
+                  <Link onClick={closeMobileNav} className={`nav-link ${location.pathname ==="/reviews"? "active" : " "}`} to="/reviews">Reviews</Link>
                 </li>
               </ul>
 
               <div className="d-flex">
-                <Link className="btn btn-danger btn-lg get-started-btn" to="/get-started">Get Started <i className="fa-solid fa-paper-plane"></i> </Link>
+                <Link onClick={closeMobileNav} className="btn btn-danger btn-lg get-started-btn" to="/get-started">Get Started <i className="fa-solid fa-paper-plane"></i> </Link>
               </div>
             </div>
           </div>

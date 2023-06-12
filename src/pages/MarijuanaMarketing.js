@@ -365,7 +365,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-solid fa-pen-to-square pe-2 pb-2"
+                className="fa-solid fa-pen-to-square pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>{" "}
               Relevant Keyword Research
@@ -376,7 +376,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-solid fa-link pe-2 pb-2"
+                className="fa-solid fa-link pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>{" "}
               Building Links
@@ -387,7 +387,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-solid fa-desktop pe-2 pb-2"
+                className="fa-solid fa-desktop pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>{" "}
               On Page Seo
@@ -398,7 +398,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-solid fa-store pe-2 pb-2"
+                className="fa-solid fa-store pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>{" "}
               PPC Marketing
@@ -409,7 +409,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-brands fa-readme pe-2 pb-2"
+                className="fa-brands fa-readme pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>{" "}
               Content Marketing
@@ -420,7 +420,7 @@ function MarijuanaMarketing() {
           <>
             <b>
               <i
-                class="fa-brands fa-readme pe-2 pb-2"
+                className="fa-brands fa-readme pe-2 pb-2"
                 style={{ color: "#ff0000" }}
               ></i>Influencer Outreach
             </b>
